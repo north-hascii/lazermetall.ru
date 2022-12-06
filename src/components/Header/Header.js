@@ -6,7 +6,7 @@ function Header() {
         <header>
             <div className={'header-container'}>
                     <div className={'header-left'}>
-                        <img className={'header-logo'} src={'images/logo.svg'} alt={"logo"}/>
+                        <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"}/>
                         <div className={'header-menu-item'}>
                             Главная
                         </div>

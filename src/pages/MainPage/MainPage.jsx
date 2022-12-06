@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from "../../components/Header/Header";
 import './MainPage.scss';
+import Footer from "../../components/Footer/Footer";
+import Faq from "../../components/Faq/Faq";
 
 function MainPage(props) {
     return (
@@ -169,6 +171,9 @@ function MainPage(props) {
                 </div>
             </div>
 
+            <Faq/>
+
+            <Footer/>
         </div>
 );
 }
