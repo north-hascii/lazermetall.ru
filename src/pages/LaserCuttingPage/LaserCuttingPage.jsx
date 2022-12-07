@@ -58,7 +58,6 @@ function LaserCuttingPage(props) {
 
   return (
     <div className={'laser-page'}>
-      <Header/>
 
       <SectionPreview page={'laser'}/>
 
@@ -80,7 +79,6 @@ function LaserCuttingPage(props) {
 
       <AnotherServices/>
 
-      <Footer/>
     </div>
   );
 }

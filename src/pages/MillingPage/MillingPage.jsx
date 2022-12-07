@@ -60,7 +60,6 @@ function MillingPage(props) {
 
   return (
     <div className={'laser-page'}>
-      <Header/>
 
       <SectionPreview page={'milling'}/>
 
@@ -82,7 +81,6 @@ function MillingPage(props) {
 
       <AnotherServices/>
 
-      <Footer/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../../components/Header/Header";
 import './MainPage.scss';
 import Footer from "../../components/Footer/Footer";
@@ -6,14 +6,17 @@ import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
 import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import Examples from "../../components/Examples/Examples";
+import usePreloader from "../../hooks/usePreloader";
 
 function MainPage(props) {
+  const {showPreloader} = usePreloader()
+  useEffect(() => {
+    showPreloader()
+  }, [])
+
   return (
     <div className={'main-page'}>
-      <Header/>
-
       <SectionPreview page={'main'}/>
-
       <div className={'section-description-container'}>
         <div className={'section-description-top'}>
           <div className={'text'}>
@@ -131,10 +134,7 @@ function MainPage(props) {
       </div>
 
       <Examples folder={'examples_main'}/>
-
       <Form/>
-
-      <Footer/>
     </div>
   );
 }
