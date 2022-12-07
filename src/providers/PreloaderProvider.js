@@ -11,7 +11,7 @@ export default function PreloaderProvider({children}) {
         movePageTop()
         setTimeout(() => {
             setIsPreloaderVisible(false)
-        }, 300)
+        }, 500)
     }
     const navigate = useNavigate()
     const navigateToWithPreloader = (route) => {
