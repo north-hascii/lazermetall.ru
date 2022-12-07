@@ -9,10 +9,7 @@ import Examples from "../../components/Examples/Examples";
 import usePreloader from "../../hooks/usePreloader";
 
 function MainPage(props) {
-  const {showPreloader} = usePreloader()
-  useEffect(() => {
-    showPreloader()
-  }, [])
+
 
   return (
     <div className={'main-page'}>

@@ -13,7 +13,7 @@ import LaserPriceList from "../../components/LaserPriceList/LaserPriceList";
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
 import usePreloader from "../../hooks/usePreloader";
-import {useEffect} from "@types/react";
+import {useEffect} from "react";
 
 
 function LaserCuttingPage(props) {
@@ -57,10 +57,6 @@ function LaserCuttingPage(props) {
     text: 'В процессе резки, под воздействием лазерного луча материал разрезаемого участка плавится, возгорается, испаряется или выдувается струей газа.',
   },]
 
-  const {showPreloader} = usePreloader()
-  useEffect(() => {
-    showPreloader()
-  }, [])
   return (
     <div className={'laser-page'}>
 

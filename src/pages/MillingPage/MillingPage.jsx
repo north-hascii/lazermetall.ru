@@ -13,7 +13,7 @@ import MillingPriceList from "../../components/MillingPriceList/MillingPriceList
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
 import usePreloader from "../../hooks/usePreloader";
-import {useEffect} from "@types/react";
+import {useEffect} from "react";
 
 function MillingPage(props) {
   const materials = [{
@@ -60,9 +60,7 @@ function MillingPage(props) {
   },]
 
   const {showPreloader} = usePreloader()
-  useEffect(() => {
-    showPreloader()
-  }, [])
+
   return (
     <div className={'laser-page'}>
 
