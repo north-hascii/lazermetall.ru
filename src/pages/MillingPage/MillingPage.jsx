@@ -1,4 +1,5 @@
 import React from 'react';
+import './MillingPage.scss';
 import Header from "../../components/Header/Header";
 import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import WorkOrder from "../../components/WorkOrder/WorkOrder";
@@ -6,8 +7,57 @@ import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import Advantages from "../../components/Advantages/Advantages";
+import Examples from "../../components/Examples/Examples";
+import Materials from "../../components/Materials/Materials";
+import MillingPriceList from "../../components/MillingPriceList/MillingPriceList";
+import Wishes from "../../components/Wishes/Wishes";
+import AnotherServices from "../../components/AnotherServices/AnotherServices";
 
 function MillingPage(props) {
+  const materials = [{
+    text: 'платик пвх',
+    src: 'images/materials_milling/plastic.jpg'
+  }, {
+    text: 'оргстекло',
+    src: 'images/materials_milling/plexiglass.jpg'
+  }, {
+    text: 'монолитный поликарбонат',
+    src: 'images/materials_milling/carbonate.jpg'
+  }, {
+    text: 'композит',
+    src: 'images/materials_milling/composite.jpg'
+  }, {
+    text: 'полистирол',
+    src: 'images/materials_milling/polystyrene.jpg'
+  }, {
+    text: 'Алюминий',
+    src: 'images/materials_milling/aluminium.jpg'
+  }, {
+    text: 'фанера',
+    src: 'images/materials_milling/plywood.jpg'
+  }, {
+    text: 'дсп, мдф',
+    src: 'images/materials_milling/chipboard.jpg'
+  }, {
+    text: 'пенокартон',
+    src: 'images/materials_milling/foam_board.jpg'
+  },]
+
+  const questions = [{
+    title: 'Как сделать заказ?',
+    text: 'Для оформления заказа свяжитесь с нашим менеджером по телефону +7 (4852) 64-11-12. Либо вы можете сразу присылать заявку по электронной почте с указанием контактных данных.В теле письма прикрепите DXF файлы Ваших деталей для резки.В случае отсутствия развёрток, мы поможем Вам их сделать (услуга оценивается в зависимости от сложности).',
+  }, {
+    title: 'Может ли фрезер работать с нестандартными и сложными деталями?',
+    text: 'Да, это одно из преимуществ фрезерной обработки. Это достигается благодаря управлению программным методом в автоматическом режиме.',
+  }, {
+    title: 'Какое расширение файла необходимо для программы станка?',
+    text: 'Подойдут файлы из Авто-КАДа, имеющие расширения .dxf, dwg. Однако, мы принимаем и обычные чертежи.Некоторые станки читают файлы из CorelDraw.',
+  }, {
+    title: 'У меня нет DXF файлов, только чертежи.',
+    text: 'Даже если есть только эскиз, то мы можем Вам сделать из него чертеж и затем преобразовать файл для резки и гибки.Оформление конструкторской документации зависит от масштаба технического задания.',
+  },]
+
+
   return (
     <div className={'laser-page'}>
       <Header/>
@@ -16,173 +66,21 @@ function MillingPage(props) {
 
       <Advantages/>
 
-      <div className={'section-materials'}>
-        <div className={'section-materials-container'}>
-          <div className={'section-materials-title'}>
-            Обрабатываемые материалы
-          </div>
-          <div className={'section-materials-items'}>
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Алюминий
-              </div>
-            </div>
+      <Materials objects={materials}/>
 
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Нержавейка
-              </div>
-            </div>
+      <MillingPriceList/>
 
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Латунь
-              </div>
-            </div>
+      <Examples folder={'examples_milling'}/>
 
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Медь
-              </div>
-            </div>
-
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Углеродистая сталь
-              </div>
-            </div>
-
-            <div className={'section-materials-item'}>
-              <div className={'section-materials-item-text'}>
-                Оцинкованная сталь
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        {/*  Здест будет табличка*/}
-      </div>
-
-      <div className={'section-example'}>
-        <div className={'section-example-container'}>
-          <div className={'section-example-title'}>
-            Примеры работ
-          </div>
-          <div className={'section-example-items'}>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-          </div>
-        </div>
-
-      </div>
-
-      <div className={'section-wishes'}>
-        <div className={'section-wishes-container'}>
-          <div className={'section-wishes-title'}>
-            Пожелания к чертежам, предоставляемым заказчиком
-          </div>
-          <div className={'section-wishes-list'}>
-
-            <div className={'section-wishes-list-item'}>
-              <div className={'section-wishes-list-item-middleware'}>
-                <div className={'section-wishes-list-item-num'}>
-                  1
-                </div>
-                <div className={'section-wishes-list-item-text'}>
-                  Файлы в формате DWG, DXF, CDR.
-                </div>
-              </div>
-            </div>
-
-            <div className={'section-wishes-list-item'}>
-              <div className={'section-wishes-list-item-middleware'}>
-                <div className={'section-wishes-list-item-num'}>
-                  2
-                </div>
-                <div className={'section-wishes-list-item-text'}>
-                  Масштаб файлов
-                  в чертеже 1:1.
-                </div>
-              </div>
-            </div>
-
-            <div className={'section-wishes-list-item'}>
-              <div className={'section-wishes-list-item-middleware'}>
-                <div className={'section-wishes-list-item-num'}>
-                  3
-                </div>
-                <div className={'section-wishes-list-item-text'}>
-                  Все кривые должны быть замкнуты.
-                </div>
-              </div>
-            </div>
-            <div className={'section-wishes-list-item'}>
-              <div className={'section-wishes-list-item-middleware'}>
-                <div className={'section-wishes-list-item-num'}>
-                  4
-                </div>
-                <div className={'section-wishes-list-item-text'}>
-                  Чертежи деталей содержат только полилинии, отрезки и дуги.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Wishes/>
 
       <WorkOrder/>
 
-      <Faq/>
+      <Faq data={questions}/>
 
       <Form/>
 
-      <div className={'section-another-service'}>
-        <div className={'section-another-service-container'}>
-          <div className={'section-another-service-title'}>
-            Другие услуги компании
-          </div>
-          <div className={'section-another-service-list'}>
-            <div className={'section-another-service-item'}>
-              <div className={'section-another-service-item-text'}>
-                Гибка металла
-              </div>
-            </div>
-
-            <div className={'section-another-service-item'}>
-              <div className={'section-another-service-item-text'}>
-                Фрезерная обработк
-              </div>
-            </div>
-
-            <div className={'section-another-service-item'}>
-              <div className={'section-another-service-item-text'}>
-                Порошковая покраска
-              </div>
-            </div>
-
-            <div className={'section-another-service-item'}>
-              <div className={'section-another-service-item-text'}>
-                Проектирование металлоизделий
-              </div>
-            </div>
-
-            <div className={'section-another-service-item'}>
-              <div className={'section-another-service-item-text'}>
-                Проектирование металлоконструкций
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AnotherServices/>
 
       <Footer/>
     </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import './Form.scss';
+
 
 function Form(props) {
   const [toSend, setToSend] = React.useState({
@@ -45,8 +47,6 @@ function Form(props) {
   }
 
   const pageRoute = window.location.pathname
-  console.log(pageRoute)
-
   return (
     <div className={'section-form'}>
       <div className={'section-form-title'}>

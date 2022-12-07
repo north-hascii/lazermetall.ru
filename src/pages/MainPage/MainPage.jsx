@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
 import SectionPreview from "../../components/SectionPreview/SectionPreview";
+import Examples from "../../components/Examples/Examples";
 
 function MainPage(props) {
   return (
@@ -129,25 +130,7 @@ function MainPage(props) {
         </div>
       </div>
 
-      <div className={'section-example'}>
-        <div className={'section-example-container'}>
-          <div className={'section-example-title'}>
-            Примеры работ
-          </div>
-          <div className={'section-example-items'}>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-            <div className={'section-example-item'}/>
-          </div>
-        </div>
-
-      </div>
+      <Examples folder={'examples_main'}/>
 
       <Form/>
 

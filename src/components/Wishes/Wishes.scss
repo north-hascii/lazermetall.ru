@@ -1,0 +1,76 @@
+.section-wishes {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-wishes-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.section-wishes-title {
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+
+  margin-bottom: 50px;
+}
+
+.section-wishes-list {
+  margin: 0 auto;
+  max-width: 1600px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.section-wishes-list-item {
+  background: #DADEE3;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  max-width: 380px;
+  width: 380px;
+}
+
+.section-wishes-list-item-middleware {
+  padding: 24px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.section-wishes-list-item-num {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.section-wishes-list-item-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 136.52%;
+  /* or 27px */
+
+  color: #182129;
+  margin-right: 56px;
+}

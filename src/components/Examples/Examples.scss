@@ -1,0 +1,68 @@
+.section-example {
+  background: linear-gradient(180deg, #142C4F 0%, #182129 99.94%);
+}
+
+.section-example-container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 50px 80px 120px 80px;
+}
+
+.section-example-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-example-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section-example-item {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  margin-bottom: 20px;
+
+  &:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(4) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(5) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(7) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(8) {
+    margin-right: 20px;
+  }
+}

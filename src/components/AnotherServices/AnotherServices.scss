@@ -1,0 +1,81 @@
+.section-another-service {
+  background: #182129;
+}
+
+.section-another-service-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.section-another-service-title {
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  padding: 50px 0;
+}
+
+.section-another-service-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-bottom: 50px;
+}
+
+.section-another-service-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 175px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:nth-child(1) {
+    background-image: url("../../../public/images/services/steel.jpg");
+    margin-right: 20px;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../../public/images/services/milling.jpg");
+    margin-right: 20px;
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../../public/images/services/powder.jpg");
+    margin-right: 20px;
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../../public/images/services/project.jpg");
+    margin-right: 20px;
+  }
+
+  &:nth-child(5) {
+    background-image: url("../../../public/images/services/project2.jpg");
+  }
+}
+
+.section-another-service-item-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}

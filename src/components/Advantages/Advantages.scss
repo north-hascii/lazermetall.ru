@@ -1,0 +1,97 @@
+.section-advantages {
+
+}
+
+.section-advantages-title {
+  margin: 120px 0 50px 0;
+  display: flex;
+  justify-content: space-around;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+}
+
+.section-advantages-list {
+  margin: 0 auto 120px auto;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.section-advantages-list-item {
+  background: #DADEE3;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.section-advantages-list-item-middleware {
+  padding: 24px;
+}
+
+.section-advantages-list-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136.52%;
+  /* identical to box height, or 25px */
+
+  text-transform: uppercase;
+
+  color: #142C4F;
+  margin: 50px 0 15px 0;
+}
+
+.section-advantages-list-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 136.52%;
+  /* or 27px */
+
+  color: #182129;
+}
+
+.section-advantages-nav {
+  max-width: 1600px;
+  margin: 0 auto 100px auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section-advantages-nav-item {
+  background: #DADEE3;
+  border-radius: 35px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #182129;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 45px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  margin-bottom: 20px;
+}

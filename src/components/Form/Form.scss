@@ -1,0 +1,85 @@
+.section-form {
+  background: #DADEE3;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-form-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #182129;
+  margin-bottom: 50px;
+}
+
+.section-form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.section-form-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.section-form-item-form {
+  display: flex;
+  align-items: flex-start;
+  width: 353px;
+  height: 60px;
+
+  background: #FFFFFF;
+  border: 0 solid #fff;
+  padding: 0 0 0 24px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #182129;
+}
+
+.section-form-button {
+  width: 244px;
+  height: 60px;
+  background: #F7CF46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #182129;
+}
+
+.section-form-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #182129;
+  padding: 20px 45px;
+}
