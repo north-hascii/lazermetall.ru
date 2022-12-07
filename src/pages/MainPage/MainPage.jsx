@@ -1,14 +1,11 @@
 import React, {useEffect} from 'react';
-import Header from "../../components/Header/Header";
 import './MainPage.scss';
-import Footer from "../../components/Footer/Footer";
-import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
 import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import Examples from "../../components/Examples/Examples";
 import usePreloader from "../../hooks/usePreloader";
 
-function MainPage(props) {
+function MainPage() {
   const {showPreloader} = usePreloader()
   useEffect(() => {
     showPreloader()
