@@ -10,8 +10,10 @@ function MainPage(props) {
             <Header/>
 
             <div className={'section-preview-container'}>
-                <div className={'section-preview-text'}>
-                    Лазерная и Фрезерная обработка листовых материалов
+                <div>
+                    <div className={'section-preview-title'}>
+                        Лазерная и Фрезерная обработка листовых материалов
+                    </div>
                 </div>
             </div>
 
@@ -157,10 +159,12 @@ function MainPage(props) {
                 </div>
                 <div className={'section-form-inputs'}>
                     <div className={'section-form-item'}>
-                        <input className={'section-form-item-form'} name="form_name" type="text" placeholder="Имя" value=""/>
+                        <input className={'section-form-item-form'} name="form_name" type="text" placeholder="Имя"
+                               value=""/>
                     </div>
                     <div className={'section-form-item'}>
-                        <input className={'section-form-item-form'} name="form_name" type="text" placeholder="Телефон" value=""/>
+                        <input className={'section-form-item-form'} name="form_name" type="text" placeholder="Телефон"
+                               value=""/>
                     </div>
                     <div className={'section-form-button'}>
                         Отправить
@@ -175,7 +179,7 @@ function MainPage(props) {
 
             <Footer/>
         </div>
-);
+    );
 }
 
 export default MainPage;
