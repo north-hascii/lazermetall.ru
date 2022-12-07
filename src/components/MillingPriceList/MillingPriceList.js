@@ -49,8 +49,6 @@ function MillingPriceList(props) {
                                 </div>
                             })}
                         </div>
-
-
                     })}
                 </div>
             })}
