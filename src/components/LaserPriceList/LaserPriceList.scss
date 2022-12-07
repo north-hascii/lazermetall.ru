@@ -1,0 +1,90 @@
+.LaserPriceList-container {
+  text-align: center;
+  padding: 120px 80px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.LaserPriceList-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+
+  margin-bottom: 30px;
+}
+
+.LaserPriceList-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #182129;
+
+  margin-bottom: 20px;
+}
+
+.LaserPriceList-subtext {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #182129;
+
+  margin-bottom: 50px;
+}
+
+.LaserPriceList-table {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.LaserPriceList-table-row {
+  display: flex;
+  flex-direction: row;
+
+  &.grey {
+    background: #DADEE3;
+  }
+}
+
+.LaserPriceList-table-row-cell {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #182129;
+
+  padding: 20px;
+  width: 205px;
+
+  text-align: center;
+
+  &:not(:last-child) {
+    border-right: 2px solid rgba(24, 33, 41, 0.3);
+  }
+}
+
+.LaserPriceList-disclaimer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #182129;
+
+  margin-top: 50px;
+}
