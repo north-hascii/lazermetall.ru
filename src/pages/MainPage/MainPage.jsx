@@ -5,7 +5,9 @@ import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import Examples from "../../components/Examples/Examples";
 import usePreloader from "../../hooks/usePreloader";
 
-function MainPage() {
+function MainPage(props) {
+
+
   return (
     <div className={'main-page'}>
       <SectionPreview page={'main'}/>

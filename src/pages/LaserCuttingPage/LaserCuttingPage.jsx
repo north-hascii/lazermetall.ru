@@ -12,6 +12,8 @@ import Materials from "../../components/Materials/Materials";
 import LaserPriceList from "../../components/LaserPriceList/LaserPriceList";
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
+import usePreloader from "../../hooks/usePreloader";
+import {useEffect} from "react";
 
 
 function LaserCuttingPage(props) {
@@ -54,7 +56,6 @@ function LaserCuttingPage(props) {
     title: 'Как режут металл лазером?',
     text: 'В процессе резки, под воздействием лазерного луча материал разрезаемого участка плавится, возгорается, испаряется или выдувается струей газа.',
   },]
-
 
   return (
     <div className={'laser-page'}>
