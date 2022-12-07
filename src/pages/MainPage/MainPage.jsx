@@ -175,8 +175,6 @@ function MainPage(props) {
                 </div>
             </div>
 
-            <Faq/>
-
             <Footer/>
         </div>
     );

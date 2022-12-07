@@ -1,12 +1,12 @@
 import Header from "./components/Header/Header";
 import MainPage from "./pages/MainPage/MainPage";
-import LaserCutting from "./pages/LaserCuttingPage/LaserCutting";
+import LaserCuttingPage from "./pages/LaserCuttingPage/LaserCuttingPage";
 
 function App() {
   return (
     <div className="App">
       {/*<MainPage/>*/}
-      <LaserCutting/>
+      <LaserCuttingPage/>
     </div>
   );
 }

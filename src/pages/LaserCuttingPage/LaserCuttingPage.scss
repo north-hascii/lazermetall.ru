@@ -169,11 +169,16 @@
 
 
 .section-materials {
-  max-width: 1600px;
-  margin: 0 auto;
-  margin-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 
   background: #182129;
+}
+
+.section-materials-container {
+  max-width: 1600px;
+  margin: 0 auto;
+
 }
 
 .section-materials-title {
@@ -186,7 +191,7 @@
 
   color: #FFFFFF;
   text-align: center;
-  margin: 50px;
+  margin: 0 auto 50px auto;
 }
 
 .section-materials-items {
@@ -247,4 +252,50 @@
   text-transform: uppercase;
 
   color: #FFFFFF;
+}
+
+.section-wishes {
+
+}
+
+.section-wishes-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.section-wishes-title {
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+}
+
+.section-wishes-list {
+  margin: 0 auto 120px auto;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch
+
+}
+
+.section-wishes-list-item {
+  background: #DADEE3;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.section-wishes-list-item-middleware {
+  padding: 24px;
+  max-width: 380px;
 }
