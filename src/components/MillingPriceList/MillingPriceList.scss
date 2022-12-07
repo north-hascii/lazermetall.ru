@@ -1,11 +1,11 @@
-.LaserPriceList-container {
+.MillingPriceList-container {
   text-align: center;
   padding: 120px 80px;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.LaserPriceList-title {
+.MillingPriceList-title {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -18,7 +18,7 @@
   margin-bottom: 30px;
 }
 
-.LaserPriceList-subtitle {
+.MillingPriceList-subtitle {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-.LaserPriceList-subtext {
+.MillingPriceList-subtext {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -43,21 +43,25 @@
   margin-bottom: 50px;
 }
 
-.LaserPriceList-table {
+.MillingPriceList-table {
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.LaserPriceList-table-row {
+.MillingPriceList-table-row {
   display: flex;
   flex-direction: row;
+
+  &:first-child {
+    height: 110px;
+  }
 
   &.grey {
     background: #DADEE3;
   }
 }
 
-.LaserPriceList-table-row-cell {
+.MillingPriceList-table-row-cell {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +71,7 @@
   color: #182129;
 
   padding: 20px;
-  width: 205px;
+  width: 500px;
 
   text-align: center;
 
@@ -76,7 +80,19 @@
   }
 }
 
-.LaserPriceList-disclaimer {
+.MillingPriceList-table-row-cell-item {
+  text-align: left;
+
+  &.columns {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(24, 33, 41, 0.3);
+    &:not(:first-child) {
+      padding-top: 10px;
+    }
+  }
+}
+
+.MillingPriceList-disclaimer {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
