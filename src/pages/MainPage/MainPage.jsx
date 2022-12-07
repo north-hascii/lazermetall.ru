@@ -11,6 +11,7 @@ function MainPage(props) {
   return (
     <div className={'main-page'}>
       <SectionPreview page={'main'}/>
+
       <div className={'section-description-container'}>
         <div className={'section-description-top'}>
           <div className={'text'}>
@@ -128,6 +129,7 @@ function MainPage(props) {
       </div>
 
       <Examples folder={'examples_main'}/>
+
       <Form/>
     </div>
   );

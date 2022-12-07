@@ -35,8 +35,8 @@
 
 .section-description-bottom-left {
   & > img {
-    width: 775px;
-    height: 445px;
+    max-width: 775px;
+    max-height: 445px;
   }
 }
 
@@ -111,6 +111,7 @@
 .section-service-items {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
