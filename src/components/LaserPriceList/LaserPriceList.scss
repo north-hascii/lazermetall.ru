@@ -51,7 +51,7 @@
 .LaserPriceList-table-row {
   display: flex;
   flex-direction: row;
-  width: max-content;
+  width: fit-content;
   &.grey {
     background: #DADEE3;
   }
