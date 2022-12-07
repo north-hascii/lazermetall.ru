@@ -12,6 +12,8 @@ import Materials from "../../components/Materials/Materials";
 import MillingPriceList from "../../components/MillingPriceList/MillingPriceList";
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
+import usePreloader from "../../hooks/usePreloader";
+import {useEffect} from "@types/react";
 
 function MillingPage(props) {
   const materials = [{
@@ -57,7 +59,10 @@ function MillingPage(props) {
     text: 'Даже если есть только эскиз, то мы можем Вам сделать из него чертеж и затем преобразовать файл для резки и гибки.Оформление конструкторской документации зависит от масштаба технического задания.',
   },]
 
-
+  const {showPreloader} = usePreloader()
+  useEffect(() => {
+    showPreloader()
+  }, [])
   return (
     <div className={'laser-page'}>
 
