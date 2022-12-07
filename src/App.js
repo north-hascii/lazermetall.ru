@@ -1,12 +1,12 @@
-import Header from "./components/Header/Header";
-import MainPage from "./pages/MainPage/MainPage";
-import LaserCuttingPage from "./pages/LaserCuttingPage/LaserCuttingPage";
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      {/*<MainPage/>*/}
-      <LaserCuttingPage/>
+        <BrowserRouter>
+            <AppRouter/>
+        </BrowserRouter>
     </div>
   );
 }

@@ -8,7 +8,6 @@ function MainPage(props) {
     return (
         <div className={'main-page'}>
             <Header/>
-
             <div className={'section-preview-container'}>
                 <div>
                     <div className={'section-preview-title'}>
@@ -174,7 +173,6 @@ function MainPage(props) {
                     Нажимая кнопку «Отправить» вы даёте своё согласие на обработку персональных данных.
                 </div>
             </div>
-
             <Footer/>
         </div>
     );
