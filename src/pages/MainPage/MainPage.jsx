@@ -6,11 +6,6 @@ import Examples from "../../components/Examples/Examples";
 import usePreloader from "../../hooks/usePreloader";
 
 function MainPage() {
-  const {showPreloader} = usePreloader()
-  useEffect(() => {
-    showPreloader()
-  }, [])
-
   return (
     <div className={'main-page'}>
       <SectionPreview page={'main'}/>
