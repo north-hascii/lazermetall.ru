@@ -9,7 +9,7 @@ function Header() {
         <header>
             <div className={'header-container'}>
                 <div className={'header-left'}>
-                    <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"}/>
+                    <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"} onClick={() => navigate(MAIN_ROUTE)}/>
                     <div className={'header-menu-item'} onClick={() => navigate(MAIN_ROUTE)}>
                         Главная
                     </div>

@@ -46,12 +46,13 @@
 .MillingPriceList-table {
   max-width: 1600px;
   margin: 0 auto;
+  //overflow-x: auto;
 }
 
 .MillingPriceList-table-row {
   display: flex;
   flex-direction: row;
-
+  width: max-content;
   &:first-child {
     height: 110px;
   }
