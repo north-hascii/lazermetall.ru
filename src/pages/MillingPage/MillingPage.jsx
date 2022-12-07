@@ -1,20 +1,18 @@
 import React from 'react';
-import './LaserCuttingPage.scss';
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import WorkOrder from "../../components/WorkOrder/WorkOrder";
 import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
-import SectionPreview from "../../components/SectionPreview/SectionPreview";
+import Footer from "../../components/Footer/Footer";
 import Advantages from "../../components/Advantages/Advantages";
 
-
-function LaserCuttingPage(props) {
+function MillingPage(props) {
   return (
     <div className={'laser-page'}>
       <Header/>
 
-      <SectionPreview page={'laser'}/>
+      <SectionPreview page={'milling'}/>
 
       <Advantages/>
 
@@ -191,4 +189,4 @@ function LaserCuttingPage(props) {
   );
 }
 
-export default LaserCuttingPage;
+export default MillingPage;

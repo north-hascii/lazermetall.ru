@@ -33,6 +33,7 @@ header{
   color: #182129;
 
   .header-menu-item{
+    cursor: pointer;
     &:not(:last-child){
       margin-right: 45px;
     }
@@ -74,6 +75,8 @@ header{
 }
 
 .header-button-call {
+  cursor: pointer;
+
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;

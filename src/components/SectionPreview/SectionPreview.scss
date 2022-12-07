@@ -1,0 +1,23 @@
+.section-preview-container {
+  min-height: 465px;
+  max-width: 1730px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  &.main{
+    background-image: url("../../../public/images/main_img.jpg");
+  }
+
+  &.laser{
+    background-image: url("../../../public/images/laser_cutting_img.jpg");
+  }
+
+  &.milling{
+    background-image: url("../../../public/images/milling_img.jpg");
+  }
+}

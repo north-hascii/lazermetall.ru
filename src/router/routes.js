@@ -2,6 +2,7 @@ import MainPage from "../pages/MainPage/MainPage";
 import {LASER_CUTTING_ROUTE, MAIN_ROUTE, MILLING_CUTTING_ROUTE, NOTFOUND_ROUTE} from "../utils/consts";
 import LaserCuttingPage from "../pages/LaserCuttingPage/LaserCuttingPage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
+import MillingPage from "../pages/MillingPage/MillingPage";
 
 
 export const routes = [
@@ -15,7 +16,7 @@ export const routes = [
     },
     {
         path: MILLING_CUTTING_ROUTE,
-        Component: <MainPage/>
+        Component: <MillingPage/>
     },
     {
         path: NOTFOUND_ROUTE,
