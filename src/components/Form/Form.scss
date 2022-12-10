@@ -14,7 +14,6 @@
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
-
   color: #182129;
   margin-bottom: 50px;
 }
@@ -23,8 +22,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-
   margin-bottom: 30px;
 }
 
@@ -39,18 +36,14 @@
   align-items: flex-start;
   width: 353px;
   height: 60px;
-
   background: #FFFFFF;
   border: 0 solid #fff;
-  padding: 0 0 0 24px;
-
+  padding: 0 10px 0 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
   color: #182129;
 }
 
@@ -61,14 +54,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
   color: #182129;
 }
 
@@ -79,7 +69,72 @@
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-
   color: #182129;
   padding: 20px 45px;
+}
+
+@media (max-width: 1200px) {
+  .section-form-item-form, .section-form-button {
+    width: 200px;
+  }
+  .section-form {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-form-item-form{
+    width: 115px;
+    margin-bottom: 10px;
+  }
+  .section-form-button {
+    width: 120px;
+  }
+  .section-form-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .section-form-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #182129;
+  }
+
+  .section-form-inputs {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-form {
+    padding: 30px 20px;
+  }
+  .section-form-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-form-item-form {
+    margin-bottom: 20px;
+  }
+  .section-form-item {
+    margin-right: 0 !important;
+  }
+  .section-form-item-form{
+    width: 200px;
+  }
+  .section-form-button {
+    width: 234px;
+  }
+  .section-form-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #182129;
+  }
 }
