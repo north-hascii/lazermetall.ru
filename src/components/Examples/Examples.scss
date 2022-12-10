@@ -22,52 +22,59 @@
 }
 
 .section-example-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, max-content);
+  justify-content:center;
 }
 
 .section-example-item {
   width: 100%;
   max-width: 500px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 300px;
-  margin-bottom: 20px;
-
-  margin-right: 20px;
+  //margin-bottom: 20px;
+  //
+  //margin-right: 20px;
   &:nth-child(3n+3) {
-    margin-right: 0;
+   // margin-right: 0;
   }
 }
 
 @media(max-width: 1572px) {
-  .section-example-item {
-    margin-right: 20px !important;
-
-    &:nth-child(2n+2) {
-      margin-right: 0 !important;
-    }
+  .section-example-items {
+    grid-template-columns: repeat(2, max-content);
   }
+  //.section-example-item {
+  //  margin-right: 20px !important;
+  //
+  //  &:nth-child(2n+2) {
+  //    margin-right: 0 !important;
+  //  }
+  //}
 }
 
 @media(max-width: 1100px) {
   .section-example-item {
     max-width: 350px;
     min-height: 200px;
-    margin-right: 10px !important;
-    margin-bottom: 10px !important;
-
-    &:nth-child(2n+2) {
-      margin-right: 0 !important;
-    }
+    //margin-right: 10px !important;
+    //margin-bottom: 10px !important;
+    //
+    //&:nth-child(2n+2) {
+    //  margin-right: 0 !important;
+    //}
   }
 }
 
@@ -92,12 +99,12 @@
   .section-example-item {
     max-width: 250px;
     min-height: 150px;
-    margin-right: 10px !important;
-    margin-bottom: 10px !important;
-
-    &:nth-child(2n+2) {
-      margin-right: 0 !important;
-    }
+    //margin-right: 10px !important;
+    //margin-bottom: 10px !important;
+    //
+    //&:nth-child(2n+2) {
+    //  margin-right: 0 !important;
+    //}
   }
 }
 
@@ -128,6 +135,14 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+  }
+  .section-example-item {
+    grid-template-columns: repeat(1, max-content);
+  }
+
+  .section-example-items {
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, max-content);
   }
 }
 
