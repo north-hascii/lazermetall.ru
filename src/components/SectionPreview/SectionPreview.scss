@@ -29,6 +29,7 @@
   max-width: 1000px;
   align-items: start;
   margin: 0 auto;
+  padding: 120px 50px 30px 20px;
 }
 
 .section-preview-title {
@@ -37,14 +38,9 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 136.52%;
-  /* or 66px */
-
   text-transform: uppercase;
-
   color: #FFFFFF;
-
   max-width: 960px;
-  margin-top: 120px;
   margin-bottom: 30px;
 }
 
@@ -54,28 +50,68 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 136.52%;
-  /* identical to box height, or 33px */
-
   color: #FFFFFF;
   margin-bottom: 110px;
 }
 
 .section-preview-button {
   cursor: pointer;
-
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
   color: #182129;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  width: 245px;
-  height: 60px;
   background: #F7CF46;
+  padding: 19px 50px;
+}
+
+@media (max-width: 768px) {
+  .section-preview-container {
+    min-height: 409px;
+    &.main{
+      background-image: url("../../../public/images/page_preview/main_mobile.jpg");
+    }
+
+    &.laser{
+      background-image: url("../../../public/images/page_preview/laser_mobile.jpg");
+    }
+
+    &.milling{
+      background-image: url("../../../public/images/page_preview/milling_mobile.jpg");
+    }
+  }
+
+  .section-preview {
+    padding: 55px 50px 50px 20px;
+  }
+  .section-preview-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 136.52%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .section-preview-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 120px;
+    color: #FFFFFF;
+  }
+
+  .section-preview-button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #182129;
+    padding: 12px 17px;
+  }
 }
