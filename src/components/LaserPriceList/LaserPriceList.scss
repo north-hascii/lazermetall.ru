@@ -53,6 +53,7 @@
   display: flex;
   flex-direction: row;
   width: 1600px;
+
   &.grey {
     background: #DADEE3;
   }
@@ -90,3 +91,114 @@
   margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .LaserPriceList-container {
+    padding: 60px 40px;
+  }
+  .LaserPriceList-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .LaserPriceList-subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .LaserPriceList-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .LaserPriceList-disclaimer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #182129;
+    margin-top: 30px;
+  }
+  .LaserPriceList-table-row-cell {
+    width: 110px;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+  }
+  .LaserPriceList-table-row {
+    width:995px;
+  }
+}
+
+@media (max-width: 560px) {
+  .LaserPriceList-container {
+    padding: 60px 20px;
+  }
+  .LaserPriceList-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .LaserPriceList-subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .LaserPriceList-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .LaserPriceList-disclaimer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #182129;
+    margin-top: 30px;
+  }
+  .LaserPriceList-table-row-cell {
+    width: 110px;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+  }
+  .LaserPriceList-table-row {
+   width:995px;
+  }
+}
