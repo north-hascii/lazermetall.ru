@@ -34,7 +34,8 @@
 .section-wishes-list-item {
   background: #DADEE3;
   border-radius: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
+
   &:not(:last-child) {
     margin-right: 25px;
   }
@@ -73,11 +74,30 @@
   margin-right: 56px;
 }
 
+@media (max-width: 1700px) {
+  .section-wishes-list {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-wishes-list {
+    grid-template-columns: repeat(2, 380px);
+  }
+}
+
 @media (max-width: 1000px) {
   .section-wishes-list-item {
     margin-bottom: 20px;
     max-width: 330px;
     width: 330px;
+  }
+  .section-wishes-list {
+    grid-template-columns: repeat(2, 330px);
   }
 }
 
@@ -116,6 +136,9 @@
     max-width: 250px;
     width: 250px;
   }
+  .section-wishes-list {
+    grid-template-columns: repeat(2, 250px);
+  }
 }
 
 
@@ -131,6 +154,7 @@
     margin-bottom: 10px;
     max-width: 175px;
     width: 175px;
+
     &:not(:last-child) {
       margin-right: 10px;
     }
@@ -169,5 +193,8 @@
     margin-bottom: 10px;
     max-width: 135px;
     width: 135px;
+  }
+  .section-wishes-list {
+    grid-template-columns: repeat(2, 135px);
   }
 }
