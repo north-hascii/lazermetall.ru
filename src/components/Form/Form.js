@@ -48,7 +48,7 @@ function Form(props) {
 
   const pageRoute = window.location.pathname
   return (
-    <div className={'section-form'}>
+    <div id={'callback-form'} className={'section-form'}>
       <div className={'section-form-title'}>
         {(pageRoute === "/") ?
           "Закажите обратный звонок"

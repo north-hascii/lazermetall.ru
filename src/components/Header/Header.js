@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import {useNavigate} from "react-router-dom";
+import {Link} from "react-scroll";
 
 import {LASER_CUTTING_ROUTE, MAIN_ROUTE, MILLING_CUTTING_ROUTE} from "../../utils/consts";
 
@@ -10,7 +11,8 @@ function Header() {
         <header>
             <div className={'header-container'}>
                 <div className={'header-left'}>
-                    <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"} onClick={() => navigate(MAIN_ROUTE)}/>
+                    <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"}
+                         onClick={() => navigate(MAIN_ROUTE)}/>
                     <div className={'header-menu-item'} onClick={() => navigate(MAIN_ROUTE)}>
                         Главная
                     </div>
@@ -29,13 +31,16 @@ function Header() {
                     <div className={'header-phone'}>
                         +7 (4852) 64-11-12
                     </div>
-                    <div className={'header-button-call'}>
-                        Заказать звонок
-                    </div>
+                    <Link to={'callback-form'} smooth spy duration={750}>
+                        <div className={'header-button-call'}>
+                            Заказать звонок
+                        </div>
+                    </Link>
                 </div>
             </div>
         </header>
-    );
+    )
+        ;
 }
 
 export default Header;
