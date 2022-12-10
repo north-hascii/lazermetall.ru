@@ -1,0 +1,206 @@
+.section-service {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 16px 120px 16px;
+}
+
+.section-service-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #182129;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-service-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-service-item {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  margin-bottom: 20px;
+
+  &:not(:nth-child(3n+3)) {
+    margin-right: 20px;
+  }
+
+  &:nth-child(1) {
+    background-image: url("../../../public/images/services/lazer.jpg");
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../../public/images/services/steel.jpg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../../public/images/services/project.jpg");
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../../public/images/services/milling.jpg");
+  }
+
+  &:nth-child(5) {
+    background-image: url("../../../public/images/services/powder.jpg");
+  }
+
+  &:nth-child(6) {
+    background-image: url("../../../public/images/services/project2.jpg");
+  }
+}
+
+.section-service-item-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+@media(max-width: 1550px) {
+  .section-service-item {
+    margin-right: 20px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media(max-width: 1100px) {
+  .section-service-item {
+    max-width: 350px;
+    min-height: 200px;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+
+    &:nth-child(2n+2) {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .section-service-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .section-service-item-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+
+  .section-service-item {
+    max-width: 250px;
+    min-height: 150px;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+
+    &:nth-child(2n+2) {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+
+@media (max-width: 560px) {
+  .section-service-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .section-service-items {
+
+  }
+
+  .section-service-item {
+    max-width: 235px;
+    min-height: 120px;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
+  .section-service-item-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+}
+
+//@media (max-width: 450px)  {
+//  .section-service-item {
+//    max-width: 155px;
+//    min-height: 85px;
+//  }
+//}
+@media (max-width: 520px) {
+  .section-service-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-service-item {
+    max-width: 250px;
+    min-height: 150px;
+    margin-right: 0 !important;
+  }
+  .section-service-item-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+}
