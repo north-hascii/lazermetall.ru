@@ -1,5 +1,5 @@
 .section-advantages {
-
+  padding: 0 30px;
 }
 
 .section-advantages-title {
@@ -18,19 +18,22 @@
 }
 
 .section-advantages-list {
-  margin: 0 auto 120px auto;
+  margin: 0 auto 60px auto;
   max-width: 1600px;
   display: flex;
   flex-direction: row;
-
+  flex-wrap: wrap;
 }
 
 .section-advantages-list-item {
   background: #DADEE3;
   border-radius: 20px;
+  min-width: 377px;
+  width: 377px;
+  margin-bottom: 20px;
 
   &:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 
@@ -94,4 +97,79 @@
   }
 
   margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 850px) {
+  .section-advantages {
+    padding: 0 10px;
+  }
+  .section-advantages-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #182129;
+    margin-top: 60px;
+  }
+
+  .section-advantages-list {
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+
+  .section-advantages-list-item-middleware {
+    padding: 12px;
+  }
+  .section-advantages-list-item {
+    width: 150px;
+    min-width: 150px;
+    margin-right: 10px !important;
+  }
+  .section-advantages-list-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136.52%;
+    text-transform: uppercase;
+    margin: 20px 0 15px 0;
+  }
+
+  .section-advantages-list-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 136.52%;
+    color: #182129;
+  }
+  .section-advantages-list-item-middleware {
+    & > img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .section-advantages-nav {
+    margin-bottom: 30px;
+  }
+
+  .section-advantages-nav-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .section-advantages-list-item {
+    width: 140px;
+    min-width: 140px;
+    margin-right: 5px !important;
+  }
 }
