@@ -1,7 +1,16 @@
 import React from 'react';
 import './AnotherServices.scss';
+import {useNavigate} from "react-router-dom";
+import {movePageTop} from "../../utils/funcs";
+import {MILLING_CUTTING_ROUTE} from "../../utils/consts";
 
 function AnotherServices(props) {
+  const navigate = useNavigate()
+
+  const customNavigate = (route) => {
+    movePageTop()
+    navigate(route)
+  }
   return (
     <div className={'section-another-service'}>
       <div className={'section-another-service-container'}>
@@ -16,7 +25,7 @@ function AnotherServices(props) {
           </div>
 
           <div className={'section-another-service-item'}>
-            <div className={'section-another-service-item-text'}>
+            <div className={'section-another-service-item-text'} onClick={() => customNavigate(MILLING_CUTTING_ROUTE)}>
               Фрезерная обработка
             </div>
           </div>
