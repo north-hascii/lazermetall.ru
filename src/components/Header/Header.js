@@ -24,8 +24,7 @@ function Header() {
     }
 
 
-    return (
-        <header>
+    return (<header>
             <img className={'header-logo'} src={'images/logo_dark.svg'} alt={"logo"}
                  onClick={() => navigate(MAIN_ROUTE)}/>
             <div id={'header-container'} className={'header-container'}>
@@ -59,9 +58,7 @@ function Header() {
                 <span></span>
                 <span></span>
             </div>
-        </header>
-    )
-        ;
+        </header>);
 }
 
 export default Header;
