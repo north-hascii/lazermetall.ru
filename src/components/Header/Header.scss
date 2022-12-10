@@ -1,8 +1,12 @@
 
-header{
+header {
   padding: 40px 80px;
   max-width: 1600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 .header-container {
@@ -10,6 +14,8 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  //noinspection CssInvalidPropertyValue
+  width: -webkit-fill-available;
 }
 
 .header-logo {
@@ -33,9 +39,10 @@ header{
 
   color: #182129;
 
-  .header-menu-item{
+  .header-menu-item {
     cursor: pointer;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 45px;
     }
   }
@@ -89,4 +96,121 @@ header{
 
   background: #F7CF46;
   padding: 20px 45px;
+}
+
+#nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+#nav-toggle:hover {
+  cursor: pointer;
+}
+
+#nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  background-color: #000;
+  transition: all .25s;
+}
+
+#nav-toggle.active span:first-child {
+  transform: rotate(45deg) translate(4.4px, 4.4px);
+}
+
+#nav-toggle.active span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-toggle.active span:last-child {
+  transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
+
+@media (min-width: 1600px) {
+  #nav-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  header {
+    justify-content: space-between;
+  }
+  .header-container {
+    position: absolute;
+    right: 0;
+    top: 138px;
+    flex-direction: column;
+    width: fit-content;
+    display: none;
+    text-align: left;
+    background: #DADEE3;
+    border-radius: 20px 0px 0px 20px;
+    padding: 50px 60px;
+
+    &.open {
+      display: initial;
+    }
+  }
+
+  .header-left, .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > div {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .header-first-part {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 50px 16px 30px 16px;
+  }
+  .header-logo {
+    width: 113px;
+    height: 35px;
+  }
+  .header-container {
+    top: 126px;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-left, .header-right {
+    & > div {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #182129;
+    }
+  }
+
+  .header-button-call {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #182129;
+
+    padding: 12px 17px;
+  }
 }
