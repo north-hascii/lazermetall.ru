@@ -18,6 +18,11 @@ function Header() {
         document.getElementById('header-container').classList.remove('open')
     }
 
+    const closeAndNavigate = (route) => {
+        closeMenu()
+        navigate(route)
+    }
+
 
     return (
         <header>
@@ -25,14 +30,13 @@ function Header() {
                  onClick={() => navigate(MAIN_ROUTE)}/>
             <div id={'header-container'} className={'header-container'}>
                 <div className={'header-left'}>
-
-                    <div className={'header-menu-item'} onClick={() => navigate(MAIN_ROUTE)}>
+                    <div className={'header-menu-item'} onClick={() => closeAndNavigate(MAIN_ROUTE)}>
                         Главная
                     </div>
-                    <div className={'header-menu-item'} onClick={() => navigate(LASER_CUTTING_ROUTE)}>
+                    <div className={'header-menu-item'} onClick={() => closeAndNavigate(LASER_CUTTING_ROUTE)}>
                         Лазерная резка
                     </div>
-                    <div className={'header-menu-item'} onClick={() => navigate(MILLING_CUTTING_ROUTE)}>
+                    <div className={'header-menu-item'} onClick={() => closeAndNavigate(MILLING_CUTTING_ROUTE)}>
                         Фрезерная резка
                     </div>
                 </div>
@@ -43,7 +47,7 @@ function Header() {
                     <div className={'header-phone'}>
                         +7 (4852) 64-11-12
                     </div>
-                    <Link to={'callback-form'} smooth spy duration={750}>
+                    <Link to={'callback-form'} smooth spy duration={750} onClick={() => closeMenu()}>
                         <div className={'header-button-call'}>
                             Заказать звонок
                         </div>
