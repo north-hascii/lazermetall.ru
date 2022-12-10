@@ -98,7 +98,14 @@
     &:nth-child(2n+2) {
       margin-right: 0 !important;
     }
-  }
+  }  .section-service-item-text {
+       font-style: normal;
+       font-weight: 700;
+       font-size: 20px;
+       line-height: 23px;
+       text-transform: uppercase;
+       color: #FFFFFF;
+     }
 }
 
 @media(max-width: 768px) {
