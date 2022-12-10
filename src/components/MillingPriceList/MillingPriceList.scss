@@ -44,15 +44,15 @@
 }
 
 .MillingPriceList-table {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
-  //overflow-x: auto;
+  overflow-x: auto;
 }
 
 .MillingPriceList-table-row {
   display: flex;
   flex-direction: row;
-  width: 1600px;
+  width: 1200px;
   overflow-x: auto;
   &:first-child {
     height: 110px;
@@ -73,7 +73,7 @@
   color: #182129;
 
   padding: 20px;
-  width: 500px;
+  width: 300px;
 
   text-align: center;
 
@@ -108,4 +108,131 @@
   color: #182129;
 
   margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .MillingPriceList-table-row-cell {
+    width: 300px;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+  }
+  .MillingPriceList-table-row {
+    width:900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .MillingPriceList-container {
+    padding: 60px 40px;
+  }
+  .MillingPriceList-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .MillingPriceList-subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .MillingPriceList-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .MillingPriceList-disclaimer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #182129;
+    margin-top: 30px;
+  }
+  .MillingPriceList-table-row-cell {
+    width: 250px;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+  }
+  .MillingPriceList-table-row {
+    width:750px;
+  }
+}
+
+@media (max-width: 560px) {
+  .MillingPriceList-container {
+    padding: 60px 20px;
+  }
+  .MillingPriceList-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .MillingPriceList-subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #182129;
+    margin-bottom: 20px;
+  }
+  .MillingPriceList-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #182129;
+    margin-bottom: 30px;
+  }
+
+  .MillingPriceList-disclaimer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #182129;
+    margin-top: 30px;
+  }
+  .MillingPriceList-table-row-cell {
+    width: 150px;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #182129;
+  }
+  .MillingPriceList-table-row {
+    width:450px;
+  }
 }
