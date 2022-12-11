@@ -17,7 +17,7 @@ import {useEffect} from "react";
 
 function MillingPage(props) {
   const materials = [{
-    text: 'платик пвх',
+    text: 'пластик пвх',
     src: 'images/materials_milling/plastic.jpg'
   }, {
     text: 'оргстекло',
