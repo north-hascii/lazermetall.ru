@@ -67,7 +67,7 @@ function SectionDescription(props) {
                     </div>
                     <div className={'section-description-item-right'}>
                         <div className={'section-description-item-right-title'}>
-                            ВЫПОЛНЯЕМ ПОЛНЫЙ ЦИКЛ РАБОТ
+                            работаем оперативно
                         </div>
 
                         <div className={'section-description-item-right-text'}>
