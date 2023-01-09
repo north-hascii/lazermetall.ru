@@ -1,7 +1,7 @@
 {
   "short_name": "ГлассФасад",
   "name": "Лазерная и фрезерная обработка листовых материалов",
-  "start_url": "http://lazermetall.ru",
+  "start_url": "https://lazermetall.ru",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
