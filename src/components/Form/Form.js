@@ -9,8 +9,10 @@ function Form(props) {
 
     const completeForm = async (e) => {
         e.preventDefault()
-        sendMessage().catch(err => {
-            alert(err)
+        await sendMessage(toSend.from_name, "+7 " + toSend.from_number).then( () => {
+            alert("Ваша заявка принята. Мы скоро свяжемся с Вами.")
+        }).catch(() => {
+            alert("Не удалось отправить заявку.")
         })
     }
 
