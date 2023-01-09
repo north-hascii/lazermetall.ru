@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.scss'
-import {LASER_CUTTING_ROUTE, MAIN_ROUTE, MILLING_CUTTING_ROUTE} from "../../utils/consts";
+import {LASER_CUTTING_ROUTE, MILLING_CUTTING_ROUTE} from "../../utils/consts";
 import {useNavigate} from "react-router-dom";
 import {movePageTop} from "../../utils/funcs";
 

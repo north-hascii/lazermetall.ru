@@ -1,19 +1,15 @@
 import React from 'react';
 import './MillingPage.scss';
-import Header from "../../components/Header/Header";
 import SectionPreview from "../../components/SectionPreview/SectionPreview";
 import WorkOrder from "../../components/WorkOrder/WorkOrder";
 import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
-import Footer from "../../components/Footer/Footer";
 import Advantages from "../../components/Advantages/Advantages";
 import Examples from "../../components/Examples/Examples";
 import Materials from "../../components/Materials/Materials";
 import MillingPriceList from "../../components/MillingPriceList/MillingPriceList";
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
-import usePreloader from "../../hooks/usePreloader";
-import {useEffect} from "react";
 
 function MillingPage(props) {
   const materials = [{
@@ -58,8 +54,6 @@ function MillingPage(props) {
     title: 'У меня нет DXF файлов, только чертежи.',
     text: 'Даже если есть только эскиз, то мы можем Вам сделать из него чертеж и затем преобразовать файл для резки и гибки.Оформление конструкторской документации зависит от масштаба технического задания.',
   },]
-
-  const {showPreloader} = usePreloader()
 
   return (
     <div className={'laser-page'}>

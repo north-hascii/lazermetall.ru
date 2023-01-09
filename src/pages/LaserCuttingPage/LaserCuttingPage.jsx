@@ -1,7 +1,5 @@
 import React from 'react';
 import './LaserCuttingPage.scss';
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import WorkOrder from "../../components/WorkOrder/WorkOrder";
 import Faq from "../../components/Faq/Faq";
 import Form from "../../components/Form/Form";
@@ -12,8 +10,6 @@ import Materials from "../../components/Materials/Materials";
 import LaserPriceList from "../../components/LaserPriceList/LaserPriceList";
 import Wishes from "../../components/Wishes/Wishes";
 import AnotherServices from "../../components/AnotherServices/AnotherServices";
-import usePreloader from "../../hooks/usePreloader";
-import {useEffect} from "react";
 
 
 function LaserCuttingPage(props) {
