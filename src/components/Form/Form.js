@@ -1,19 +1,53 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Form.scss';
 import {sendMessage} from "../../http/formAPI";
+import useNotification from "../../hooks/useNotification";
+
 function Form(props) {
     const [toSend, setToSend] = React.useState({
         from_name: '', from_number: ''
     });
 
+    const [isRequestWithError, setIsRequestWithError] = useState(false)
+
+    const {setIsNotificationVisible, isFormAvailable, setIsFormAvailable, setFormContent} = useNotification()
 
     const completeForm = async (e) => {
         e.preventDefault()
-        await sendMessage(toSend.from_name, "+7 " + toSend.from_number).then( () => {
-            alert("Ваша заявка принята. Мы скоро свяжемся с Вами.")
-        }).catch(() => {
-            alert("Не удалось отправить заявку.")
-        })
+        if (isFormAvailable) {
+            setIsFormAvailable(false)
+            setFormContent("Ваша заявка получена")
+            setIsNotificationVisible(true)
+
+            await sendMessage(toSend.from_name, "+7 " + toSend.from_number).then(() => {
+            }).catch((err) => {
+                setFormContent("Не удалось отправить заявку")
+                setIsNotificationVisible(true)
+                setIsFormAvailable(false)
+                setIsRequestWithError(true)
+                setDisabilityTimer()
+            })
+        }
+    }
+    const BAN_TIME = 10
+    const [banTimer, setBanTimer] = useState(BAN_TIME)
+
+    useEffect(() => {
+        if (isRequestWithError) {
+            if (banTimer === 0) {
+                setIsRequestWithError(false)
+                setBanTimer(BAN_TIME)
+                setIsFormAvailable(true)
+            }
+            const timer = setInterval(() => {
+                setBanTimer(banTimer - 1)
+            }, 1000)
+            return () => clearInterval(timer)
+        }
+    }, [banTimer])
+
+    const setDisabilityTimer = () => {
+        setBanTimer(banTimer - 1)
     }
 
     const handleNameChange = (e) => {
@@ -39,6 +73,7 @@ function Form(props) {
         setToSend({...toSend, [e.target.name]: number});
     }
 
+
     const pageRoute = window.location.pathname
     return (
         <div id={'callback-form'} className={'section-form'}>
@@ -63,15 +98,20 @@ function Form(props) {
                            required
                            name={'from_number'}
                            value={"+7 " + toSend.from_number}
+                           pattern="\+7 \([0-9]{3}\) [0-9]{3} - [0-9]{2} - [0-9]{2}"
                            onChange={handlePhoneChange}
                            placeholder={'Телефон'}
-                           minLength={22}
                            type="tel"/>
                 </div>
-                <button className={'section-form-button'} type='submit'>
-                    Отправить
+                <button className={'section-form-button'} type='submit' id={'form-button'}>
+                    {!isFormAvailable && !isRequestWithError && "Форма отправлена"}
+                    {!isFormAvailable && isRequestWithError && "Форма недоступна"}
+                    {isFormAvailable && !isRequestWithError && "Отправить"}
                 </button>
             </form>
+            <div className={`form-ban-message ${isRequestWithError ? 'visible' : 'hidden'}`}>
+                Отправка формы будет доступна через <span>{banTimer}</span> секунд
+            </div>
             <div className={'section-form-text'}>
                 Нажимая кнопку «Отправить» вы даёте своё согласие на обработку персональных данных.
             </div>

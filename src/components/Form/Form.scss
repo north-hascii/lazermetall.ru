@@ -73,6 +73,21 @@
   padding: 20px 45px;
 }
 
+
+.form-ban-message {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  &.visible {
+    display: initial;
+  }
+  &.hidden {
+    display: none;
+  }
+  &>span {
+    font-weight: bold;
+  }
+}
 @media (max-width: 1200px) {
   .section-form-item-form, .section-form-button {
     width: 200px;
