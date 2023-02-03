@@ -44,7 +44,7 @@ function Header() {
                         glassfasad@list.ru
                     </div>
                     <div className={'header-phone'}>
-                        +7 (4852) 64-11-12
+                        +7 (980) 652-00-02
                     </div>
                     <Link to={'callback-form'} smooth spy duration={750} onClick={() => closeMenu()}>
                         <div className={'header-button-call'}>

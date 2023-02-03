@@ -29,7 +29,7 @@ function Footer(props) {
                                 glassfasad@list.ru
                             </div>
                             <div className={'footer-right-text2'}>
-                                +7 (4852) 64-11-12
+                                +7 (980) 652-00-02
                             </div>
                         </div>
                     </div>
