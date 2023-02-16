@@ -3,7 +3,7 @@ import './WorkOrder.scss'
 
 function WorkOrder() {
     const data = [{text: 'Вы присылаете нам чертежи или файлы раскроя.'}, {text: 'Мы считаем стоимость вашего заказа.'}, {text: 'Проектируем и подготавливаем к производству.'}, {text: 'Производим ваше изделие.'}, {text: 'Отгружаем готовое изделие.'}]
-    return (<div className={'work-order'}>
+    return (<div id={'work-order'} className={'work-order'}>
         <div className={'work-order-container'}>
             <div className={'work-order-title'}>
                 Порядок работ

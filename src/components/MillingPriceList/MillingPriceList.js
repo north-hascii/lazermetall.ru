@@ -25,7 +25,7 @@ function MillingPriceList(props) {
     }, {
         cells: [['ГРАВИРОВКА'], [''], ['900 руб/час']]
     },]
-    return (<div className={'MillingPriceList-container'}>
+    return (<div id={'price-list'} className={'MillingPriceList-container'}>
         <div className={'MillingPriceList-title'}>
             цены
         </div>

@@ -3,7 +3,7 @@ import './Examples.scss';
 
 function Examples({folder}) {
   return (
-    <div className={'section-example'}>
+    <div id={'section-example'} className={'section-example'}>
       <div className={'section-example-container'}>
         <div className={'section-example-title'}>
           Примеры работ

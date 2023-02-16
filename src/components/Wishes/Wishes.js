@@ -3,7 +3,7 @@ import './Wishes.scss';
 
 function Wishes(props) {
   return (
-    <div className={'section-wishes'}>
+    <div id={'section-wishes'} className={'section-wishes'}>
       <div className={'section-wishes-container'}>
         <div className={'section-wishes-title'}>
           Пожелания к чертежам, предоставляемым заказчиком

@@ -30,7 +30,7 @@ function LaserPriceList(props) {
         cells: ['8', '54,95 руб.', '63,19 руб.',  '–', '–', '–', '–', '–',]
     },]
 
-    return (<div className={'LaserPriceList-container'}>
+    return (<div id={'price-list'} className={'LaserPriceList-container'}>
         <div className={'LaserPriceList-title'}>
             цены
         </div>
